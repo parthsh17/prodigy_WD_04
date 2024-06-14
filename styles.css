@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden; /* Prevents horizontal scrollbar due to gradient animation */
+  overflow: hidden; 
   background: linear-gradient(-45deg, #ff1744, #2962ff);
   animation: gradientAnimation 15s ease infinite;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 h1 {
-  color: #1a237e; /* Deep blue color */
+  color: #1a237e; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@ h1 {
 
 #search-btn {
   padding: 10px 20px;
-  background-color: #0288d1; /* Blue button background */
+  background-color: #0288d1; 
   color: white;
   border: none;
   border-radius: 4px;
@@ -77,7 +77,7 @@ h1 {
 }
 
 #search-btn:hover {
-  background-color: #01579b; /* Darker blue on hover */
+  background-color: #01579b; 
 }
 
 .weather-info {
@@ -85,6 +85,6 @@ h1 {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
