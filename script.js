@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const locationInput = document.getElementById("location-input");
   const weatherInfo = document.getElementById("weather-info");
 
-  const apiKey = "9212ac41d38e4b27a0d75616241406"; // Replace with your actual API key
+  const apiKey = "9212ac41d38e4b27a0d75616241406"; 
   const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 
   searchBtn.addEventListener("click", () => {
@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         console.log(data);
 
-        // Clear previous weather info
+     
         weatherInfo.innerHTML = "";
 
-        // Display current weather
+        
         const current = data.current;
         const currentWeather = `
                     <h2>Current Weather in ${data.location.name}, ${data.location.country}</h2>
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
         weatherInfo.innerHTML += currentWeather;
 
-        // Display forecast for next 3 days
+        
         const forecast = data.forecast.forecastday;
         forecast.forEach((day) => {
           const forecastWeather = `
